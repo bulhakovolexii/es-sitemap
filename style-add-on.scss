@@ -1,0 +1,76 @@
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+
+#latest-news {
+    & .latest-news-item {
+        & img {
+            vertical-align: middle;
+            object-fit: cover;
+            width: 100%;
+            height: 278px;
+        }
+    }
+}
+.homepage {
+    &__about div {
+        padding-right: 0 !important;
+        padding-left: 30 !important;
+        @media (max-width: 600px) {
+            padding-left: 0 !important;
+        }
+    }
+    &__photo_carousel {
+        & img {
+            border: none !important;
+
+            height: 100% !important;
+            object-fit: cover;
+        }
+        & a {
+            height: 100% !important;
+        }
+    }
+    &__science div {
+        padding-left: 0 !important;
+        padding-right: 30 !important;
+
+        @media (max-width: 600px) {
+            padding-left: 0 !important;
+        }
+    }
+    &__employers_carousel {
+        & img {
+            border: none !important;
+            height: 100% !important;
+
+            object-fit: contain;
+        }
+        & a {
+            height: 100% !important;
+        }
+    }
+    &__partners {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        & img {
+            border: none !important;
+        }
+    }
+}
+.wp-block-table {
+    & thead {
+        background-color: #f2f2f2;
+
+        & tr:last-child {
+            border-bottom: 3px solid grey;
+        }
+    }
+    & tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+}
